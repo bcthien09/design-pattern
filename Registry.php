@@ -32,8 +32,6 @@ class Registry
     }
 }
 
-$registry = new Registry();
-
 Registry::set('key', 'I love Pattern');
 Registry::set('key1', 'I love Pattern1');
 
