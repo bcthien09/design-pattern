@@ -10,4 +10,8 @@ abstract class Multiton
 {
     protected static $instances = [];
 
+    public function __construct()
+    {
+    }
+
 }
