@@ -27,5 +27,12 @@ var_dump($production->getProductName());
 
 
 class FactoryA {
-    
+
+}
+
+class FactoryC {
+
+}
+class FactoryB {
+
 }
