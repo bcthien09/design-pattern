@@ -5,21 +5,50 @@
  * Date: 9/5/18
  * Time: 6:45 PM
  */
-
-interface FactoryInterface
+//
+//interface FactoryInterface
+//{
+//    public function getProductName();
+//}
+//
+//class Factory implements FactoryInterface
+//{
+//
+//    public function getProductName()
+//    {
+//        return 'OK Factory';
+//    }
+//}
+//
+//$production = new Factory();
+//
+//var_dump($production->getProductName());
+class Automobile
 {
-    public function getProductName();
-}
+    private $vehicleMake;
+    private $vehicleModel;
 
-class Factory implements FactoryInterface
-{
-
-    public function getProductName()
+    public function __construct($make, $model)
     {
-        return 'OK Factory';
+        $this->vehicleMake = $make;
+        $this->vehicleModel = $model;
+    }
+
+    public function getMakeAndModel()
+    {
+        return $this->vehicleMake . ' - ' . $this->vehicleModel;
     }
 }
 
-$production = new Factory();
+class AutomobileFactory
+{
+    public static function create($make, $model)
+    {
+        return new Automobile($make, $model);
+    }
+}
 
-var_dump($production->getProductName());
+// have the factory create the Automobile object
+$veyron = AutomobileFactory::create('Bugatti', 'Veyron');
+
+print_r($veyron->getMakeAndModel()); // outputs "Bugatti Veyron"
