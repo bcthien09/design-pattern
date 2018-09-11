@@ -23,3 +23,9 @@ class Factory implements FactoryInterface
 $production = new Factory();
 
 var_dump($production->getProductName());
+
+
+
+class FactoryA {
+    
+}
