@@ -31,6 +31,6 @@ class Singleton
 }
 
 $single = Singleton::getInstance();
-$single->mix = 'Thien';
+$single->mix = 'Singleton';
 
 var_dump($single->mix);

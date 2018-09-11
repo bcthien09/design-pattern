@@ -16,16 +16,10 @@ class Factory implements FactoryInterface
 
     public function getProductName()
     {
-        return 'OK ';
+        return 'OK Factory';
     }
 }
 
 $production = new Factory();
 
 var_dump($production->getProductName());
-
-
-
-class FactoryA {
-    
-}

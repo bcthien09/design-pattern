@@ -32,7 +32,7 @@ class Registry
     }
 }
 
-Registry::set('key', 'I love Pattern');
+Registry::set('key', 'I love Registry');
 Registry::set('key1', 'I love Pattern1');
 
 var_dump(Registry::get('key'));
