@@ -36,3 +36,7 @@ class FactoryC {
 class FactoryB {
 
 }
+
+class A{
+    
+}
